@@ -4,196 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaiwey Chen | Wharton Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --wharton-blue: #003366;
             --penn-red: #990000;
-            --light-bg: #f8f9fa;
-            --text-main: #2d3436;
-            --text-muted: #636e72;
+            --text-dark: #1a1a1a;
+            --text-light: #595959;
+            --line-color: #e0e0e0;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            color: var(--text-main);
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: #f0f2f5;
+            color: var(--text-dark);
             margin: 0;
-            padding: 40px 20px;
-            line-height: 1.6;
+            padding: 40px 15px;
+            line-height: 1.5;
         }
 
-        .resume-card {
+        .resume-container {
             max-width: 900px;
             margin: 0 auto;
-            background: white;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            border-top: 10px solid var(--wharton-blue);
-            position: relative;
+            background: #ffffff;
+            padding: 50px 60px;
+            border-radius: 4px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 12px solid var(--wharton-blue);
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            border-bottom: 2px solid var(--wharton-blue);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         h1 {
             margin: 0;
-            font-size: 2.8rem;
+            font-size: 2.4rem;
             color: var(--wharton-blue);
-            letter-spacing: -1px;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
         }
 
-        .contact-info {
+        .contact-bar {
             margin-top: 10px;
-            color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
         }
 
-        .contact-info a {
-            color: var(--penn-red);
+        .contact-bar a {
+            color: var(--wharton-blue);
             text-decoration: none;
-            margin: 0 10px;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         h2 {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             color: var(--wharton-blue);
-            border-bottom: 2px solid #eee;
-            padding-bottom: 8px;
-            margin-top: 35px;
             text-transform: uppercase;
+            border-bottom: 1px solid var(--line-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
             letter-spacing: 1px;
             display: flex;
             align-items: center;
         }
 
-        h2::before {
+        h2::after {
             content: "";
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            background: var(--penn-red);
-            margin-right: 12px;
-            border-radius: 2px;
+            flex: 1;
+            height: 1px;
+            background: var(--line-color);
+            margin-left: 15px;
         }
 
-        .exp-item {
-            margin-bottom: 20px;
-        }
+        .entry { margin-bottom: 22px; }
 
-        .exp-header {
+        .entry-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             font-weight: 700;
-            color: #111;
+            font-size: 1.05rem;
         }
 
-        .exp-sub {
+        .entry-sub {
             display: flex;
             justify-content: space-between;
             font-style: italic;
-            color: var(--text-muted);
-            margin-bottom: 8px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 5px;
         }
+
+        .location { font-weight: 500; font-style: normal; color: var(--text-dark); }
 
         ul {
             padding-left: 18px;
-            margin: 5px 0;
+            margin: 0;
         }
 
         li {
-            margin-bottom: 6px;
+            margin-bottom: 5px;
+            font-size: 0.92rem;
+            color: #333;
         }
 
-        .skills-grid {
+        .skills-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            gap: 20px;
+            font-size: 0.92rem;
         }
 
-        .tag {
-            display: inline-block;
-            background: #e1e8ed;
-            padding: 2px 10px;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            margin-right: 5px;
+        .badge {
+            background: #f1f4f8;
             color: var(--wharton-blue);
+            padding: 2px 8px;
+            border-radius: 3px;
             font-weight: 600;
+            font-size: 0.8rem;
+            margin-right: 4px;
         }
+
+        .highlight { color: var(--penn-red); font-weight: 600; }
 
         @media print {
             body { background: white; padding: 0; }
-            .resume-card { box-shadow: none; border: none; width: 100%; padding: 20px; }
+            .resume-container { box-shadow: none; border: none; width: 100%; padding: 0; }
         }
     </style>
 </head>
 <body>
 
-<div class="resume-card">
+<div class="resume-container">
     <header>
         <h1>CHAIWEY CHEN</h1>
-        <div class="contact-info">
-            <a href="mailto:chen03@wharton.upenn.edu">chen03@wharton.upenn.edu</a> | 
-            <span>301-312-5803</span> | 
-            <a href="https://linkedin.com/in/chaiwey">LinkedIn</a> | 
-            <span>Potomac, MD</span>
-        </div>
-    </header>
-
-    <h2>🎓 Education</h2>
-    <div class="exp-item">
-        <div class="exp-header">University of Pennsylvania, The Wharton School</div>
-        <div class="exp-sub">Bachelor of Science in Economics (Candidate) <span>2025 – 2029</span></div>
-        <ul>
-            <li><strong>Relevant Coursework:</strong> Multi-Variable Calculus, Intro to Python for Data Science, Intro to Marketing, Intro to Operations.</li>
-            <li><strong>Honors:</strong> Global Finalist (Top 0.25%) - Wharton Global High School Investment Competition.</li>
-        </ul>
-    </div>
-
-    <h2>💡 Strategic Consulting & Leadership</h2>
-    <div class="exp-item">
-        <div class="exp-header">The Social Impact Consulting Group</div>
-        <div class="exp-sub">Consultant <span>Sept 2025 – Present</span></div>
-        <ul>
-            <li>Conduct research on Philadelphia's food insecurity landscape, analyzing 12 global case studies.</li>
-            <li>Prepare strategic recommendations for the Philadelphia City Council's Food Security Task Force.</li>
-        </ul>
-    </div>
-
-    <div class="exp-item">
-        <div class="exp-header">Maryland DECA</div>
-        <div class="exp-sub">State President <span>2023 – 2025</span></div>
-        <ul>
-            <li>Elected to lead 1,400 students and 16 state officers; onboarded 16 new regional chapters.</li>
-            <li>Partnered with <strong>Bank of America</strong> to provide financial literacy training to members.</li>
-        </ul>
-    </div>
-
-    <h2>📈 Analyst Experience</h2>
-    <div class="exp-item">
-        <div class="exp-header">FHL Investment Fund</div>
-        <div class="exp-sub">Financial Analyst Intern <span>May 2024 – Sept 2024</span></div>
-        <ul>
-            <li>Authored a 20-page equity research report on NVIDIA using Porter’s 5 Forces and ESG evaluation.</li>
-        </ul>
-    </div>
-
-    <h2>🛠 Skills & Interests</h2>
-    <div class="skills-grid">
-        <div>
-            <strong>Technical:</strong> <span class="tag">Python</span> <span class="tag">SQL</span> <span class="tag">Gatsby.js</span> <span class="tag">Excel</span>
-        </div>
-        <div>
-            <strong>Languages:</strong> English (Native), Chinese (Bilingual), Spanish (Conversational)[cite: 5, 6].
-        </div>
-    </div>
-</div>
-
-</body>
-</html>
+        <div class="contact-bar">
+            <a href="mailto:chen03@wharton.upenn.edu">chen03@wharton.upenn.edu</a> | 301-3
