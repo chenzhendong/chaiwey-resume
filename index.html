@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaiwey Chen | Wharton Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --wharton-blue: #003366;
+            --penn-red: #990000;
+            --light-bg: #f8f9fa;
+            --text-main: #2d3436;
+            --text-muted: #636e72;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .resume-card {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-top: 10px solid var(--wharton-blue);
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            color: var(--wharton-blue);
+            letter-spacing: -1px;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--penn-red);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--wharton-blue);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: var(--penn-red);
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+
+        .exp-item {
+            margin-bottom: 20px;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 700;
+            color: #111;
+        }
+
+        .exp-sub {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin: 5px 0;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e1e8ed;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-right: 5px;
+            color: var(--wharton-blue);
+            font-weight: 600;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .resume-card { box-shadow: none; border: none; width: 100%; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-card">
+    <header>
+        <h1>CHAIWEY CHEN</h1>
+        <div class="contact-info">
+            <a href="mailto:chen03@wharton.upenn.edu">chen03@wharton.upenn.edu</a> | 
+            <span>301-312-5803</span> | 
+            <a href="https://linkedin.com/in/chaiwey">LinkedIn</a> | 
+            <span>Potomac, MD</span>
+        </div>
+    </header>
+
+    <h2>🎓 Education</h2>
+    <div class="exp-item">
+        <div class="exp-header">University of Pennsylvania, The Wharton School</div>
+        <div class="exp-sub">Bachelor of Science in Economics (Candidate) <span>2025 – 2029</span></div>
+        <ul>
+            <li><strong>Relevant Coursework:</strong> Multi-Variable Calculus, Intro to Python for Data Science, Intro to Marketing, Intro to Operations.</li>
+            <li><strong>Honors:</strong> Global Finalist (Top 0.25%) - Wharton Global High School Investment Competition.</li>
+        </ul>
+    </div>
+
+    <h2>💡 Strategic Consulting & Leadership</h2>
+    <div class="exp-item">
+        <div class="exp-header">The Social Impact Consulting Group</div>
+        <div class="exp-sub">Consultant <span>Sept 2025 – Present</span></div>
+        <ul>
+            <li>Conduct research on Philadelphia's food insecurity landscape, analyzing 12 global case studies.</li>
+            <li>Prepare strategic recommendations for the Philadelphia City Council's Food Security Task Force.</li>
+        </ul>
+    </div>
+
+    <div class="exp-item">
+        <div class="exp-header">Maryland DECA</div>
+        <div class="exp-sub">State President <span>2023 – 2025</span></div>
+        <ul>
+            <li>Elected to lead 1,400 students and 16 state officers; onboarded 16 new regional chapters.</li>
+            <li>Partnered with <strong>Bank of America</strong> to provide financial literacy training to members.</li>
+        </ul>
+    </div>
+
+    <h2>📈 Analyst Experience</h2>
+    <div class="exp-item">
+        <div class="exp-header">FHL Investment Fund</div>
+        <div class="exp-sub">Financial Analyst Intern <span>May 2024 – Sept 2024</span></div>
+        <ul>
+            <li>Authored a 20-page equity research report on NVIDIA using Porter’s 5 Forces and ESG evaluation.</li>
+        </ul>
+    </div>
+
+    <h2>🛠 Skills & Interests</h2>
+    <div class="skills-grid">
+        <div>
+            <strong>Technical:</strong> <span class="tag">Python</span> <span class="tag">SQL</span> <span class="tag">Gatsby.js</span> <span class="tag">Excel</span>
+        </div>
+        <div>
+            <strong>Languages:</strong> English (Native), Chinese (Bilingual), Spanish (Conversational)[cite: 5, 6].
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
